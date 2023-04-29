@@ -9,7 +9,7 @@ export default function Home() {
   const [loading,setLoading] = useState(true);
 
   const getModel = async ()=>{
-    axios.get('https://master--meek-pasca-6be50e.netlify.app/api/api/getModels')
+    axios.get('https://modelrender.onrender.com/api/getModels')
     .then((res)=>{setModel(res.data)
                   setLoading(false)
     })
