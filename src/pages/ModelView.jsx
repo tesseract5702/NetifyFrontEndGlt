@@ -7,7 +7,7 @@ import Spinner from '../components/spinner'
 
 function Model(props)
 {
-  const {scene} = useGLTF('http://localhost:3000/'+props.fileName);
+  const {scene} = useGLTF('https://modelrender.onrender.com/'+props.fileName);
   return <primitive object={scene}{...props}/>;
 }
 
@@ -16,7 +16,7 @@ export default function ModelView() {
   const [fname,setFname] = useState(undefined);
   const [loading,setLoading] = useState(true);
   useEffect(()=>{
-    axios.get(`http://localhost:3000/api/getName/${id}`)
+    axios.get(`https://modelrender.onrender.com/api/getName/${id}`)
     .then((res)=>{console.log(res.data.file)
       setFname(res.data.file);
       setLoading(false);
