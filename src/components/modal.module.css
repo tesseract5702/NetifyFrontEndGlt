@@ -1,0 +1,77 @@
+.modal {
+    margin: 20px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: azure;
+  }
+  .modal > .header {
+
+    border-bottom: 1px solid gray;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+  
+    padding: 10px 5px;
+  }
+  .actions {
+    display: flex;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: 0px;
+    top: 0px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+  
+  /* @media only screen and (max-width:1020px) {
+      .modal{
+          margin: 30px;
+      }
+  }
+  @media only screen and (max-width:748px ) {
+      .modal{
+          margin: 30px;
+        }
+    }
+    @media only screen and (max-width:600px) {
+      .modal{
+          margin: 20px;
+      }
+    } */
+
+    @media (min-width:1000px)
+    {
+        .modal{
+            margin: 20px;
+            padding: 10px 80px;
+            font-size: 14px;
+            background-color: azure;
+        }
+        .modal > .close {
+            cursor: pointer;
+            position: absolute;
+            display: block;
+            padding: 2px 5px;
+            line-height: 20px;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            background: #ffffff;
+            border-radius: 18px;
+            border: 1px solid #cfcece;
+          }
+    }
