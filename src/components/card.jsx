@@ -2,13 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {BsPlay} from 'react-icons/bs'
-
+import { useNavigate } from 'react-router-dom'
 
 export default function card(props) {
   const [isHover,setIsHover] = useState(false)
+  const navigate = useNavigate();
   function handleClick(e)
   {
-    window.location.href="https://modelrender.onrender.com/3dmodel/"+e.target.id;
+    // window.location.href="https://modelrender.onrender.com/3dmodel/"+e.target.id;
+    navigate("/3dmodel/"+e.target.id);
   }
   return (
     <>
