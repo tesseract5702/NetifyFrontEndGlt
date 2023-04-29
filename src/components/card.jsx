@@ -8,7 +8,7 @@ export default function card(props) {
   const [isHover,setIsHover] = useState(false)
   function handleClick(e)
   {
-    window.location.href="http://localhost:5173/3dmodel/"+e.target.id;
+    window.location.href="https://modelrender.onrender.com/3dmodel/"+e.target.id;
   }
   return (
     <>
@@ -17,7 +17,7 @@ export default function card(props) {
         <div style={{position:'relative'}}>
           <img
             className="img-fluid"
-            src={"http://localhost:3000/"+props.image}
+            src={"https://modelrender.onrender.com/"+props.image}
             alt={props.name}
             id={props.id}
             onMouseEnter={()=>{setIsHover(true)}}

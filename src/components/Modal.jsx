@@ -33,7 +33,7 @@ export default function Modal() {
         }
         else alert("Invalid File Type.");
       
-        axios.post('http://localhost:3000/api/upload',
+        axios.post('https://modelrender.onrender.com/api/upload',
           formData,{
           headers:{
             "Content-Type":'multipart/data',
