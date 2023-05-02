@@ -10,7 +10,7 @@ export default function card(props) {
   function handleClick(e)
   {
     // window.location.href="https://modelrender.onrender.com/3dmodel/"+e.target.id;
-    navigate("/3dmodel/"+e.target.id);
+    navigate("/3dmodel/"+props.id);
   }
   return (
     <>
