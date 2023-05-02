@@ -29,7 +29,7 @@ export default function card(props) {
           {isHover && (
             <div 
             onMouseEnter={()=>{setIsHover(true)}}
-
+            onClick={handleClick}
             style={{
               position:'absolute',
               top:'50%',
